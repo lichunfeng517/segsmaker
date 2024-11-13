@@ -6,6 +6,7 @@
 	"show_progress_grid": true,
     "show_progress_every_n_steps": 2,
     "live_previews_enable": true,
+    "localization": "zh_CN",
     "live_previews_image_format": "webp",
     "live_preview_allow_lowvram_full": false,
     "live_preview_content": "Prompt",
