@@ -17,7 +17,7 @@ def shut_up(launch_args, skip_comfyui_check):
     launcher = 'main.py' if ui == 'ComfyUI' else 'launch.py'
 
     if ui != 'ComfyUI':
-        launch_args += f' --enable-insecure-extension-access --disable-console-progressbars --theme dark --encrypt-pass={pw}'
+        launch_args += f' --enable-insecure-extension-access --disable-console-progressbars --theme dark --encrypt-pass=123qwe'
 
     if ui == 'ComfyUI' and not skip_comfyui_check:
         get_ipython().system(f'{py} apotek.py')
