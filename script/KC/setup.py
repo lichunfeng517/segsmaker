@@ -8,7 +8,7 @@ P = "\033[38;5;135m"
 RST = "\033[0m"
 ERR = f"{P}[{RST}{R}ERROR{RST}{P}]{RST}"
 
-IMG = "https://github.com/gutris1/segsmaker/raw/main/script/SM/loading.png"
+IMG = "https://github.com/lichunfeng517/segsmaker/raw/main/script/SM/loading.png"
 display(Image(url=IMG))
 clear_output(wait=True)
 
@@ -189,13 +189,13 @@ def webui_req(ui, WEBUI):
     from nenen88 import pull, download
 
     if ui == 'A1111':
-        pull(f"https://github.com/gutris1/segsmaker a1111 {WEBUI}")
+        pull(f"https://github.com/lichunfeng517/segsmaker a1111 {WEBUI}")
     elif ui == 'Forge':
-        pull(f"https://github.com/gutris1/segsmaker forge {WEBUI}")
+        pull(f"https://github.com/lichunfeng517/segsmaker forge {WEBUI}")
     elif ui == 'ComfyUI':
-        pull(f"https://github.com/gutris1/segsmaker comfyui {WEBUI}")
+        pull(f"https://github.com/lichunfeng517/segsmaker comfyui {WEBUI}")
     elif ui == 'ReForge':
-        pull(f"https://github.com/gutris1/segsmaker reforge {WEBUI}")
+        pull(f"https://github.com/lichunfeng517/segsmaker reforge {WEBUI}")
 
     os.chdir(WEBUI)
     req = sym_link(ui, WEBUI)
@@ -204,9 +204,9 @@ def webui_req(ui, WEBUI):
         subprocess.run(shlex.split(lines), stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
 
     scripts = [
-        f"https://github.com/gutris1/segsmaker/raw/main/script/SM/controlnet.py {WEBUI}/asd",
-        f"https://github.com/gutris1/segsmaker/raw/main/script/KC/venv.py {WEBUI}",
-        f"https://github.com/gutris1/segsmaker/raw/main/script/KC/segsmaker.py {WEBUI}"
+        f"https://github.com/lichunfeng517/segsmaker/raw/main/script/SM/controlnet.py {WEBUI}/asd",
+        f"https://github.com/lichunfeng517/segsmaker/raw/main/script/KC/venv.py {WEBUI}",
+        f"https://github.com/lichunfeng517/segsmaker/raw/main/script/KC/segsmaker.py {WEBUI}"
     ]
 
     upscalers_path = f"{WEBUI}/models/upscale_models" if ui == 'ComfyUI' else f"{WEBUI}/models/ESRGAN"
@@ -214,7 +214,7 @@ def webui_req(ui, WEBUI):
         f"https://huggingface.co/pantat88/ui/resolve/main/4x-UltraSharp.pth {upscalers_path}",
         f"https://huggingface.co/pantat88/ui/resolve/main/4x-AnimeSharp.pth {upscalers_path}",
         f"https://huggingface.co/pantat88/ui/resolve/main/4x_NMKD-Superscale-SP_178000_G.pth {upscalers_path}",
-        f"https://huggingface.co/pantat88/ui/resolve/main/4x_RealisticRescaler_100000_G.pth {upscalers_path}",
+        f"https://huggingface.co/tim9292654/ESRGAN/resolve/main/8x_NMKD-Superscale_150000_G.pth {upscalers_path}",
         f"https://huggingface.co/pantat88/ui/resolve/main/8x_RealESRGAN.pth {upscalers_path}",
         f"https://huggingface.co/pantat88/ui/resolve/main/4x_foolhardy_Remacri.pth {upscalers_path}"
     ]
@@ -245,7 +245,7 @@ def Extensions(ui, WEBUI):
         say("<br><b>【{red} Installing Extensions{d} 】{red}</b>")
         os.chdir(WEBUI / "extensions")
         clone(str(WEBUI / "asd/extension.txt"))
-        get_ipython().system("git clone -q https://github.com/gutris1/sd-encrypt-image")
+        get_ipython().system("git clone -q https://github.com/viyiviyi/sd-encrypt-image")
 
 
 def installing_webui(ui, which_sd, WEBUI, EMB, VAE):
@@ -335,11 +335,11 @@ def lets_go():
     webui, sd = args
 
     z = [
-        (STR / '00-startup.py', f"curl -sLo {STR}/00-startup.py https://github.com/gutris1/segsmaker/raw/main/script/KC/00-startup.py"),
-        (pantat, f"curl -sLo {pantat} https://github.com/gutris1/segsmaker/raw/main/script/SM/pantat88.py"),
-        (nenen, f"curl -sLo {nenen} https://github.com/gutris1/segsmaker/raw/main/script/SM/nenen88.py"),
-        (STR / 'cupang.py', f"curl -sLo {STR}/cupang.py https://github.com/gutris1/segsmaker/raw/main/script/SM/cupang.py"),
-        (MRK, f"curl -sLo {MRK} https://github.com/gutris1/segsmaker/raw/main/script/SM/marking.py")
+        (STR / '00-startup.py', f"curl -sLo {STR}/00-startup.py https://github.com/lichunfeng517/segsmaker/raw/main/script/KC/00-startup.py"),
+        (pantat, f"curl -sLo {pantat} https://github.com/lichunfeng517/segsmaker/raw/main/script/SM/pantat88.py"),
+        (nenen, f"curl -sLo {nenen} https://github.com/lichunfeng517/segsmaker/raw/main/script/SM/nenen88.py"),
+        (STR / 'cupang.py', f"curl -sLo {STR}/cupang.py https://github.com/lichunfeng517/segsmaker/raw/main/script/SM/cupang.py"),
+        (MRK, f"curl -sLo {MRK} https://github.com/lichunfeng517/segsmaker/raw/main/script/SM/marking.py")
     ]
 
     for x, y in z:
