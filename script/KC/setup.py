@@ -245,7 +245,7 @@ def Extensions(ui, WEBUI):
         say("<br><b>【{red} Installing Extensions{d} 】{red}</b>")
         os.chdir(WEBUI / "extensions")
         clone(str(WEBUI / "asd/extension.txt"))
-        get_ipython().system("git clone -q https://github.com/viyiviyi/sd-encrypt-image")
+        get_ipython().system("git clone -q https://github.com/gutris1/sd-encrypt-image")
 
 
 def installing_webui(ui, which_sd, WEBUI, EMB, VAE):
