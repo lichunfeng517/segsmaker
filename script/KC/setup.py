@@ -255,7 +255,7 @@ def webui_req(U, W, M):
 
     scripts = [
         f'https://github.com/gutris1/segsmaker/raw/main/script/controlnet.py {W}/asd',
-        f'https://github.com/gutris1/segsmaker/raw/main/script/KC/segsmaker.py {W}'
+        f'https://github.com/lichunfeng517/segsmaker/raw/main/script/KC/segsmaker.py {W}'
     ]
 
     u = M / 'upscale_models' if U in ['ComfyUI', 'SwarmUI'] else M / 'ESRGAN'
