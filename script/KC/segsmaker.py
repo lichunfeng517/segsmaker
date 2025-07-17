@@ -14,7 +14,7 @@ import os
 
 ROOT = Path.home()
 CWD = Path.cwd()
-PW = '82a973c04367123ae98bd9abdf80d9eda9b910e2'
+PW = '123qwe'
 
 SyS = get_ipython().system
 iRON = os.environ
