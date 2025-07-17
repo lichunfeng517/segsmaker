@@ -12,6 +12,7 @@
     "live_preview_refresh_period": 100.0,
     "live_preview_fast_interrupt": true,
     "localization": "zh_CN",
+    "interrogate_clip_num_beams": 2,
     "grid_format": "png",
     "quicksettings_list": [
         "sd_model_checkpoint",
