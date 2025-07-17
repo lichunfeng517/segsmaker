@@ -8,6 +8,7 @@ https://github.com/DominikDoom/a1111-sd-webui-tagcomplete
 #https://github.com/Mikubill/sd-webui-controlnet
 #https://github.com/IDEA-Research/DWPose
 #https://github.com/gutris1/sd-hub
+https://github.com/gutris1/sd-image-encryption
 https://github.com/gutris1/sd-image-info
 https://github.com/gutris1/sd-image-viewer
 https://github.com/gutris1/sd-image-scripts
