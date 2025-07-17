@@ -7,7 +7,7 @@ import io
 
 class ImageEncryption:
     def __init__(self):
-        self.password = '82a973c04367123ae98bd9abdf80d9eda9b910e2'
+        self.password = '123qwe'
         self.tag_list = ['parameters', 'UserComment']
         self.mismatch = "axes don't match array"
 
