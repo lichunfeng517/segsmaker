@@ -18,4 +18,4 @@ https://github.com/gutris1/sd-simple-dimension-preset
 #https://github.com/gutris1/sd_civitai_extension
 https://github.com/dtlnor/stable-diffusion-webui-localization-zh_CN
 https://github.com/hnmr293/sd-webui-cutoff
-https://github.com/ArtVentureX/sd-webui-agent-schedule
+https://github.com/SipherAGI/sd-webui-agent-scheduler
